@@ -1,0 +1,42 @@
+<head>
+<style type="text/css">
+a{display:block;padding:5px;color:#666;border:0;font-size:13px;text-decoration:none}
+a:hover{background:#cc181e;color:#fff}
+.container {
+	position:relative;width:700px;overflow:hidden
+}
+</style>
+<script>
+	function highlightButton(clickedId) {
+		var currLink = document.getElementById(clickedId);
+		var links = document.getElementsByTagName('a');
+		for(var i=0; i<links.length; i++){
+			if(links[i] == currLink) {
+				currLink.style.background="#cc181e";
+				currLink.style.backgroundColor="#cc181e";
+				currLink.style.color="white";
+			} else {
+				links[i].style.backgroundColor="#EAF4D9";
+				links[i].style.color="#666"
+			}
+		}
+		return true;
+	}
+</script>
+</head>
+<div class="container">
+		<h1> Areas </h1>
+			<a id="houseHoldLink" href="https://www.googledrive.com/host/0B5Xr6Mkbv4OyaEl3MThNSklDS0U" target="_parent" onclick="highlightButton(this.id)">Household</a>
+			<a id="eductionLink" target="_parent" href="https://www.googledrive.com/host/0B5Xr6Mkbv4OyLVdZd2JzUmEwcTg" onclick="highlightButton(this.id)">Education</a>
+			<a id="womenWelfareLink" target="_parent" href="https://www.googledrive.com/host/0B5Xr6Mkbv4OyR2JieUIydTRjZjQ" onclick="highlightButton(this.id)">Women Welfare</a>
+			<a id="agricultureLink" target="_parent" href="https://www.googledrive.com/host/0B5Xr6Mkbv4OyZ3JiYVZxM2RJU1k" onclick="highlightButton(this.id)">Agriculture</a>
+			<a id="govtEmployeesLink" href="https://www.googledrive.com/host/0B5Xr6Mkbv4OyYjdCME1IdGhoQTA" target="_parent" onclick="highlightButton(this.id)">Govt Employees and Teachers</a>
+			<a id="transportLink" href="https://www.googledrive.com/host/0B5Xr6Mkbv4OyX0ZxcFNJbHRNWjg" target="_parent" style="color:white;background-color:#cc181e" onclick="highlightButton(this.id)">Infrastructure Development</a>
+			<a id="seniorCitizensLink" href="https://www.googledrive.com/host/0B5Xr6Mkbv4OyQ3BFYzVqVk8zRWM" target="_parent" onclick="highlightButton(this.id)">Welfare of Senior Citizens</a>
+			<a id="childWelfareLink" href="https://www.googledrive.com/host/0B5Xr6Mkbv4OyMGNrc3hsaElSU00" target="_parent" onclick="highlightButton(this.id)">Child Welfare</a>
+			<a id="backwardClassesLink" href="https://www.googledrive.com/host/0B5Xr6Mkbv4OydWlzRHNzNGZUTVU" target="_parent" onclick="highlightButton(this.id)">Welfare of BC/OBC/SC/ST classes</a>
+			<a id="minorityLink" href="https://www.googledrive.com/host/0B5Xr6Mkbv4OyTlI5LXNTYWlQLUE" target="_parent" onclick="highlightButton(this.id)">Minority Welfare</a>
+			<a id="differentlyAbledLink" href="https://www.googledrive.com/host/0B5Xr6Mkbv4OySkZEdkJTMzFNLWs" target="_parent" onclick="highlightButton(this.id)">Welfare of Differently-Abled</a>
+			<a id="sportsLink" href="https://www.googledrive.com/host/0B5Xr6Mkbv4Oyck1YQlpQcktqYmM" target="_parent" onclick="highlightButton(this.id)">Sports</a>
+</div>
+	
